@@ -1,0 +1,33 @@
+.container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    height: 75px;
+    padding-top: 0;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #eceff1;
+    z-index: 111;
+    transform: translateY(0);
+    transition: 400ms transform;
+    will-change: transform;
+    position: relative;   
+}
+.logo{
+    margin-right: 5px;
+    margin-bottom: 15px;
+    color: firebrick;
+    font-size: xx-large;
+}
+.navbar-brand{
+    color: black;
+    font-size: x-large;
+}
+
+.navbar-link{
+  color: black;
+}
+.nav-link:hover, .nav-link:focus {
+  color: firebrick;
+}
+
+

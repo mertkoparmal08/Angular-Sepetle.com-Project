@@ -1,0 +1,44 @@
+.brands{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 115px;
+    text-decoration: none;
+}
+
+.brands span{
+    font-family: 'source_sans_prosemibold', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    display: block;
+    transition: all ease 0.2s;
+    line-height: 14px;
+    height: 42px;
+}
+
+.card-img-top{
+    position: static;
+    margin-top: 30%;
+    width: 55px;
+    border: 1px solid #000000;
+    border-radius: 50%;   
+    box-sizing: border-box; 
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    transition: all ease 0.2s;
+}
+.card-img-top:hover{
+    border: 2px solid firebrick;
+}
+
+.brands span:hover{
+    color: firebrick;
+}
+
+.brands:hover{
+    color: firebrick;
+}

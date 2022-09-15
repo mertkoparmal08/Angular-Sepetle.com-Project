@@ -1,0 +1,20 @@
+<section class="row justify-content-center mt-5">
+  <app-brands class="col-1" *ngFor="let brand of brands" [imageUrl]="brand.imageUrl" [title]="brand.title">
+  </app-brands>
+</section>
+
+<section class="card py-5 mt-5">
+  <div>
+    <div class="row row-cols-md-3 row-cols-xl-4 justify-content-center ml-5">
+      <div *ngFor="let product of items | slice:0:8">
+        <img [src]="product.imageUrl" alt="Products">
+        <div class="card-body">
+          <h5 class="card-title">{{product.brands}}</h5>
+          <p class="card-text">{{product.title}}</p>
+          <p class="price">{{product.price}}.90 <i class="fas fa-lira-sign"></i></p>
+          <button (click)="addToCard(product)" class="btn cart px-auto bg-dark text-white">Sepete Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

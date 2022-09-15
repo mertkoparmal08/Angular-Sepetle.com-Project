@@ -1,0 +1,47 @@
+
+<div class="text-center">
+  <div class="wrap">
+    <div class="search">
+      <input class="searchTerm" type="text" [(ngModel)]="term" placeholder="Ne Arıyorsunuz...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+  <div class="basket">
+    <form class="basket d-flex">
+      <button class="btn btn-outline-secondary btn-ligth" type="submit">
+        <a class="basket-text" href="/basket">
+          <i class="text-danger bi-cart-fill me-1"></i>
+          Sepete Git
+        </a>
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="container text-center mt-5">
+  <div>
+    <div class="has-text-black">
+      <button *ngFor="let category of Category" id="tshirt" (click)="selected(category)" class="btn-2">{{category}}</button>  
+    </div>
+  </div>
+</div>
+
+<section class="card py-5 mt-5">
+  <div>
+    <div class="row gx-4 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+      <div *ngFor="let product of items | filter: term">
+        <img [src]="product.imageUrl" alt="Products">
+        <div class="card-body">
+          <h5 class="card-title">{{product.brands}}</h5>
+          <p class="card-text">{{product.title}}</p>
+          <p class="price">{{product.price}}.90 <i class="fas fa-lira-sign"></i></p>
+          <button (click)="addToCard(product)" class="btn cart px-auto bg-dark text-white">Sepete Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/cart-localstorage@1.1.2/dist/cart-localstorage.min.js" type="text/javascript"></script>

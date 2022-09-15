@@ -1,0 +1,16 @@
+button {
+  font-family: sans-serif;
+}
+
+img {
+  width: 50%;
+}
+
+.price {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.row {
+  margin-left: 10px;
+}
