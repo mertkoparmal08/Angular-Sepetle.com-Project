@@ -1,7 +1,7 @@
 # Angular-Sepetle.com-Project
 
--Bu proje, Angular kullanılarak yapılmıştır.
--Proje temel e-ticaret sitesi gerekliliklerine göre yapılmaya çalışılmıştır.
+- Bu proje, Angular kullanılarak yapılmıştır.
+- Proje temel e-ticaret sitesi gerekliliklerine göre yapılmaya çalışılmıştır.
 #
 * Projede temel Angular yapılarından olan Reactive Forms, Directives, Routing ve Service yapıları kullanılmıştır.
 * Veriler bir serviste tutulup, diğer componentlerde kullanılmıştır.
